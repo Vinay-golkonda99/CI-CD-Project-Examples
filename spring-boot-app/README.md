@@ -60,7 +60,7 @@ unzip * (Install if unzip is not installed)
 chmod -R 755 /home/sonarqube/sonarqube-9.4.0.54424
 chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-9.4.0.54424
 cd sonarqube-9.4.0.54424/bin/linux-x86-64/ --- // based on your system or EC2  architecture choose the version)
-./sonar.sh start
+./sonar.sh start --- // OPEN WITH PORT 9000 IN BROWSER
 ```
 
 Hurray !! Now you can access the `SonarQube Server` on `http://<ip-address>:9000` 
