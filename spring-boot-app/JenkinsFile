@@ -13,6 +13,11 @@ pipeline {
         }
       }
     }
+    stage('Clean Workspace') {
+      steps {
+        deleteDir() // Clean the workspace before proceeding
+      }
+    }
     stage('Build and Test') {
       steps {
         sh 'ls -ltr'
